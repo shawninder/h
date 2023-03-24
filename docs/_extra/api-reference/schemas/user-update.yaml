@@ -5,5 +5,7 @@ User:
       type: string
       format: email
     display_name:
-      type: string
-      maxLength: 30
+      oneOf:
+        - type: string
+          maxLength: 30
+        - type: null
